@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- Checking whether string starts with specified string -->
+<html>
+<head>
+	<title>String Check</title>
+</head>
+<body>
+<script type="text/javascript">
+	function StringCheck()
+	{
+		var str = prompt("Enter a string");
+		//Checks whether string starts with capital letter
+		var patt = /^[A-Z]/ ;
+		var temp = [];
+		temp = str.split(" ");
+		for( i = 0 ;i<str.length ; i++)
+			if( temp[i].match(patt))
+				alert("Pattern Matches");
+			else
+				alert("Pattern Mismatches");
+	}
+</script>
+<button onclick="StringCheck();">Click Me!</button>
+</body>
+</html>
