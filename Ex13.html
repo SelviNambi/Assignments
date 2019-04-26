@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Test whether character provided at the specified index is in uppercase or not -->
+<html>
+<head>
+	<title>Check Uppercase</title>
+</head>
+<body>
+<script type="text/javascript">
+	function CheckUppercase()
+	{
+		var str = prompt("Enter a string","");
+		var index = prompt("Enter a character index to check","");
+		//if(isUpperCase(charAt(index)))
+		//var reg = /[A-Z]/g ;
+		var check = str.charAt(index);
+		if(check == check.toUpperCase())
+			alert("Specified character is in Uppercase...");
+		else
+			alert("Specified character is not in Uppercase...");
+	}
+</script>
+<button onclick="CheckUppercase();"> Check</button>
+</body>

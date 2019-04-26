@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Accepts a string and Convert first letter to UpperCase -->
+<html>
+<head>
+	<title>Convert to Uppercase</title>
+</head>
+<body>
+<script type="text/javascript">
+	function ConvertToUppercase()
+	{
+		var str=prompt("Enter a string");
+		var len=str.length;
+		document.write(str.charAt(0).toUpperCase());
+		document.write(str.substring(1,len))
+	}
+</script>
+<div>
+	<button onclick="ConvertToUppercase();">Convert</button>
+	</div>
+</body>
+</html>

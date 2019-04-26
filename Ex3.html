@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Displaying Array characters in Alphabetical Order -->
+<html>
+<head>
+	<title>String Sorting</title>
+</head>
+<body>
+<script type="text/javascript">
+	function StringSorting()
+	{
+		var str=prompt("Enter a string" , "");
+		sortString(str);
+	}
+	function sortString(str1)
+	{
+  		var arr = str1.split('');
+  		var tmp;
+  		for(var i = 0; i < arr.length; i++)
+  		{
+   		 for(var j = i + 1; j < arr.length; j++){
+      
+      		if(arr[i] > arr[j])
+      		{
+        	tmp = arr[i];
+        	arr[i] = arr[j];
+        	arr[j] = tmp;
+      		}
+    	}
+ 	}
+  
+  for(i in arr)
+  	document.write(arr[i]);
+
+}
+</script>
+<div class="container">
+
+	<button onclick="StringSorting();">Click Me!!</button> 
+</div>
+</body>
+</html>
