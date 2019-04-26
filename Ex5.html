@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Longest word from the given String -->
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function find_longest_word()
+	{
+		 var str = prompt("Enter a string" , "");
+		 var array1 = str.split(" ");
+		 var result = array1[0];
+			for(var x = 1 ; x < array1.length ; x++)
+	  		{
+	    		if(result.length < array1[x].length)
+	    		{
+	    				result = array1[x];
+	    		} 
+	  		}
+	 	 console.log( result);
+	}
+</script>
+<button onclick="find_longest_word();"> Find Longest String</button>
+</body>
+</html>
