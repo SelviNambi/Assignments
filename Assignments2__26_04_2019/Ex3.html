@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Displaying attribute of last link in the document -->
+<html>
+<head>
+	<title>Displaying Last link Attribute</title>
+</head>
+<body>
+	<div id="container">
+	<ul>
+		<li><a href="#" id="a1"> Home </a></li>
+		<li><a href="#" id="a2"> About Us </a></li>
+		<li><a href="#" id="a3">Products</a></li>
+		<li><a href="#" id="a4"> Contact </a></li>
+		<li><a href="#" id="a5">Link</a></li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	function FetchingAttribute()
+	{
+		//document.write(+document.getElementById("container").links.length);
+		//console.log("Number of links on this page : " + document.links.length);
+		var total = document.links.length;
+		var x =document.links[total - 1];
+		document.getElementById("cont2").innerHTML = x.id;
+
+	}
+</script>
+<button onclick="FetchingAttribute();"> Count</button>
+<div id="cont2">
+	</div>
+
+</body>
+</html>
