@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Get input from user and create Textbox dynamically -->
+<html>
+<head>
+	<title>Dynamic Demo</title>
+</head>
+<body>
+<script type="text/javascript">
+	function DynamicTextbox()
+	{
+		var temp = prompt("Enter a number to create textbox dynamically");
+		for(var i = 0 ;i < temp; i ++)
+		{
+			var x = document.createElement("INPUT");
+			document.getElementById("sample").appendChild(x);
+	 	}
+	}
+</script>
+<div >
+	<button onclick="DynamicTextbox();"> Click Me!!! </button>
+	
+</div>
+<div id="sample" style= "width:300px; height:300px; background-color: grey">
+</div>
+</body>
+</html>

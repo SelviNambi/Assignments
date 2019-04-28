@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove option Dynamically</title>
+</head>
+<body>
+	<select id="mySelect">
+		  <option>1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		  <option>6</option>
+		  <option>7</option>
+		  <option>8</option>
+		  <option>9</option>
+		  <option>10</option>
+
+	</select>
+<script type="text/javascript">
+	function RemoveOptionDynamic()
+	{
+		  var num = prompt("Enter a number","");
+		  var x = document.getElementById("mySelect");
+		  x.remove(num);
+	 }
+</script>
+<div id="container">
+	<button onclick="RemoveOptionDynamic();"> Remove Option</button>
+</div>
+</body>
+</html>

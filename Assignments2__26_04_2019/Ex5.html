@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Disabling the combo dropdown on click of button -->
+<html>
+<head>
+	<title>Disabling combobox dynamically</title>
+</head>
+<body>
+	<select id="mySelect">
+		<option>one</option>
+		<option>Two</option>
+		<option>Three</option>
+		<option>Four</option>
+		<option>Five</option>
+	</select>
+<script type="text/javascript">
+	function DisableCombobox()
+	{
+		document.getElementById("mySelect").disabled = true ;
+	}
+	function EnableCombobox()
+	{
+		document.getElementById("mySelect").disabled = false ;
+
+	}
+</script>
+<button onclick="DisableCombobox();"> Click to Disable ComboBox</button>
+<button onclick="EnableCombobox();"> Click to Enable ComboBox</button>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--get input from and Remove the content of the body -->
+<html>
+<head>
+	<title>Replacing Content Dynamically</title>
+</head>
+<body>
+	<div id="sample">
+		<p>
+			JavaScript often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+			Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.
+		</p>
+	</div>
+	<div id="sample1">
+	</div>
+
+<script type="text/javascript">
+	function DynamicContentChanging()
+	{
+		var myPara = document.createElement("P");
+		document.getElementById("sample").style.display = "none";
+		var usertxt = prompt("Enter content to be displayed", "");
+		myPara.innerHTML = usertxt;
+		document.getElementById("sample1").appendChild(myPara);
+	
+	}
+</script>
+<button onclick="DynamicContentChanging();"> Click to add Content</button>
+</body>
+</html>

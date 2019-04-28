@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<!-- to find the last modiified time of document-->
+<html>
+<head>
+	<title>Last Modified Time</title>
+</head>
+<body>
+<script type="text/javascript">
+	function LastModified()
+	{
+		var str = document.lastModified;
+		localStorage.setItem("modifydate",str);
+		//document.write(document.lastModified);//
+		alert("Document was last modofied on:" +localStorage.getItem("modifydate"));
+		//alert("Document was last modofied on:" str);
 
+	}
+</script>
+<div id=container" >
+	<button onclick="LastModified();">View Last Modified</button>
+</div>
+</body>
+</html>
