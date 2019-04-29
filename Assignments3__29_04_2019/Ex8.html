@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Set value to empty span Dynamically -->
+<html>
+<head>
+	<title>Setting span value</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>
+		<button id="btn1">Click to Add</button>
+	</div>
+	<div>
+		<span id="sample">
+
+		</span>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function(event) {
+			/* Act on the event */
+			var txt = prompt("Enter content to added to the page.." , "");
+			$("#sample").html(txt);
+			alert("Content added dynamically")
+		});
+	});
+</script>
+</body>
+</html>
