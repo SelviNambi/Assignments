@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Replace Word in a Text using jQuery</title>
+    <script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+   
+        
+</script>
+     
+         <script type="text/javascript" language="javascript">
+             $(function () {
+                 $("#btnReplace").click(function () {
+                  var temp = $("div").text().split(" ")[1];
+                  var temp1 = temp.bold();
+                     $("div").html($("div").html().replace(temp, temp1));
+                 });
+             }); 
+       
+</script>
+</head>
+<body>
+    <div id="div1">The JQuery is Javascript Library</div><br />
+    <input id="btnReplace" type="button" value="Replace" />
+</body>
+</html>

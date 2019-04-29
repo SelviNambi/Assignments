@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- On clicking button append content to inner HTML of document -->
+<html>
+<head>
+	<title>Append text with paragraph</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div id="paraSampleText">
+	<p>
+		This content is given statically inside body of the page...<br/>
+	</p>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function(event) {
+		/* Act on the event */
+		$("#paraSampleText").append("<p>This content is added Dynamically in the page </p>");
+
+		
+	});
+		
+	});
+
+
+</script>
+<div>
+	<button>Click to Add Content</button>
+</div>
+
+</body>
+</html>

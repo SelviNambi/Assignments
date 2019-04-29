@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Remove all option in list and add a option a option Dynamically -->
+<html>
+<head>
+	<title>DropBox Sample using JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<select id="selectID">
+		<option>HTML</option>
+		<option>Javascript</option>
+		<option>CSS</option>
+
+	</select>
+	<br/>
+<div>
+	<button id="btn1">Change option</button>
+	
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function(event) {
+			/* Act on the event */
+			$("#selectID option").remove();
+		});
+		$("button").click(function(event) {
+			
+				$("#selectID").append("<option> JQuery </option>");
+		});
+		
+	});
+</script>
+</body>
+</html>

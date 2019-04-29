@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Change text on button on a click -->
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<button class="pushme" > PUSH ME</button>
+	<script type="text/javascript">
+		$(document).ready(function(){
+   			$(".pushme").click(function () {
+      		$(this).text(function(i, text){
+          		return text === "PUSH ME" ? "DON'T PUSH ME" : "PUSH ME";
+      })
+   });
+})
+	</script>
+</body>
+</html>

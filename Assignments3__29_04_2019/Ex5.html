@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- Remove all css on div on mouse click -->
+<html>
+<head>
+	<title>Remove all CSS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<h3 style="color: red;">Heading with CSS</h3>
+	<p style="color: green">Paragraph with some CSS styling done...<br/>
+	This styling should be removed after clicking the button
+	</p>
+	<button>Remove CSS</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+    $("button").click(function(){
+
+        $("*").removeAttr("style");
+    });
+});
+</script>
+</body>
+
+</html>
