@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- On right-clicking inside div make it larger -->
+<html>
+<head>
+	<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<button>Click me!</button>
+	<div style="background-color: #534; width: 400px; height: 400px;">
+		Right click on me to see changes...
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() 
+	{
+		 $("div").contextmenu(function(event) {
+		 	
+		 	$("div").animate({
+		 		width: '600',
+		 		height: '600'},
+		 		2000, function() {
+		 		/* stuff to do after animation is complete */
+		 	});
+		 });
+	});
+</script>
+</body>
+</html>
