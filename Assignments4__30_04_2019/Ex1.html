@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Remove all spans within the page -->
+<html>
+<head>
+	<title>Removing Span Dynamically</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>
+		<button>Click to see changes!!</button>
+	</div>
+	<div id="samp">
+		<span style="color: red; background-color: #387;">
+			This content is inside first span in document...
+		</span>
+		<br/>
+		<span style="color: blue ; font-size: 20px;">
+			This content is inside second span in document...
+		</span>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			var str = $("#samp span").contents();
+			$("#samp span").remove();
+			$("#samp").append(str);
+		});
+	});
+</script>
+</body>
+</html>
