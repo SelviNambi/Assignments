@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moving content dynamically</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>
+		<button>Click to move contents</button>
+	</div>
+	<div id="first" style="background-color: grey; width: 400px; height: 400px;">
+		This is inside first div...
+	</div>
+	<div id="second">
+		This is inside second div...
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+
+			var temp = $("#second").contents();
+			$("#second").removeData();
+			$("#first").append(temp);
+			alert("content is moved dynamically");
+		});
+	});
+</script>
+</body>
+</html>
