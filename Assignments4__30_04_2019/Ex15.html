@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Click Event</title>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<button>Open New Window</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+ 
+  $("button").click(function(){
+    window.open(this);
+    if(window.open())
+    	alert("Window is still opened");
+    else
+    	alert("Window is closed");
+
+  });
+});
+</script>
+</body>
+</html>
