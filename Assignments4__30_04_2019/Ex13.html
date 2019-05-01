@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Displaying selected option in select box -->
+<html>
+<head>
+	<title>Displaying Option</title>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<select>
+		<option>One</option>
+		<option>Two</option>
+		<option>Three</option>
+		<option>Four</option>
+		<option>Five</option>
+	</select>
+	<button>Submit</button>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("button").click(function() {
+				var selectopt = $("select").children("option:selected").val();
+	        	alert("You have selected the option - " +selectopt);
+		});
+		
+	});
+</script>
+</body>
+</html>

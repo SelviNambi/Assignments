@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Setting the focus to first textbox in the document -->
+<html>
+<head>
+	<title>setting the focus</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>
+		<span>
+		<br/>Enter Name  <input id="name1" type="text" name="uname">
+		<br/>Enter New Password<input type="password" name="pwd">
+		<br/>Confirm Password<input type="password" name="confirmpwd">
+		<button>Submit</button>
+	</span>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#name1").focus();
+			
+	
+			    
+		});
+		
+	});
+</script>
+</body>
+</html>

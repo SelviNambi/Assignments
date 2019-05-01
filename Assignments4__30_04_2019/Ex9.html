@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Getting value of first column in table -->
+<html>
+<head>
+	<title>Getting certain value from table</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<table id="tbl1" border="1px solid">
+		<tr>
+			<td id="col1">Red</td>
+			<td>green</td>
+		</tr>
+		<tr>
+			<td>Blue</td>
+			<td>Magenta</td>
+		</tr>
+		<tr>
+			<td>Yellow</td>
+			<td>grey</td>
+		</tr>
+
+		
+	</table>
+	<div>
+		<button>Get Values</button>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function() {
+			console.log($("#col1").text());
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Delay the execution of subsequent items in the animation queue. -->
+<html>
+<head>
+	<title>Delaying Animation</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div>
+		<button>Click to Move images</button>
+		<img id="img1" src="jquery.jpg" style="position: relative; width: 100px; height: 100px;">
+
+	</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			//$("#img1").animate({ width:200 height: 200}, '1000');
+			$("img").delay(2000).animate({left: 300
+        });
+		});
+	
+	});
+</script>
+</body>
+</html>

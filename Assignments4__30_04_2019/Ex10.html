@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding Rows to table</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<button>Add Row</button>
+	<table id="tb1" border="1px dashed">
+		<tr>
+			<td>Name</td>
+			<td>Aaaa</td>
+		</tr>
+		<tr>
+ 			<td>Age</td>
+			<td>46</td>
+		</tr>
+		<tr>
+			<td>Address</td>
+			<td>xxx yy zz</td>
+		</tr>
+	</table>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("#tb1").append('<tr><td>Mobile No</td><td>234029</td></tr>');
+		});
+	});
+</script>
+</body>
+</html>
