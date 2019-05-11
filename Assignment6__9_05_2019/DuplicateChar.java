@@ -1,3 +1,5 @@
+//program to remove duplicate characters from string
+
 class DuplicateChar
 {
 
