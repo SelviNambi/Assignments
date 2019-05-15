@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- Creates a random  number and check if user enters the same -->
+<html>
+<head>
+	<title> Random Numbers</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Number_Match()
+	{
+		var usernum = prompt("Enter a number","");
+		var x=Random_Numbers();
+		if(usernum == x )
+			document.write("Right on!");
+		else
+			document.write("unlucky :(");
+	}
+	function Random_Numbers()
+	{
+		var num=Math.random();
+		return num;
+	}
+</script>
+<button onclick="Number_Match();"> Try It!</button>
+</body>
+</html>
